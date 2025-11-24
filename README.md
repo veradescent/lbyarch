@@ -2,6 +2,8 @@
 
 This project implements grayscale image conversion from integer pixel values (0-255) to float pixel values (0.0-1.0) using both x86-64 assembly and C implementations. The conversion is performed by dividing each integer value by 255.0.
 
+[**Video Demo Link*](https://drive.google.com/file/d/1kaotqSEwPGZET5kHyA3FX9NdCMbel_1I/view?usp=sharing)
+
 ## Correctness Verification
 
 Both implementations have been verified for correctness. The correctness check validates that each converted float value matches the expected value (integer / 255.0) within a tolerance of 0.001. Below are screenshots showing the correctness check results for both implementations:
