@@ -1,6 +1,6 @@
 # Grayscale Image Conversion - Performance Comparison
 
-This project implements grayscale image conversion from integer pixel values (0-255) to float pixel values (0.0-1.0) using both x86-64 assembly and C implementations. The conversion is performed by dividing each integer value by 255.0.
+This project implements grayscale image conversion from integer pixel values (0-255) to float pixel values (0.0-1.0) using both x86-64 assembly and C implementations. The conversion is performed by dividing each integer value by 255.0. This is the output of **Rovin Montaño and Kharlene Monloy from S17B**.
 
 [**Video Demo Link*](https://drive.google.com/file/d/1kaotqSEwPGZET5kHyA3FX9NdCMbel_1I/view?usp=sharing)
 
