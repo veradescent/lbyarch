@@ -81,10 +81,20 @@ void manual_mode() {
     double elapsed = end_time - start_time;
     double elapsed_ms = elapsed * 1000.0;
     
+    // Check correctness before outputting
+    int correctness_passed = check_correctness(array, float_array, total_elements);
+    if (!correctness_passed) {
+        printf("\nError: Correctness check failed. Output may be incorrect.\n");
+        free(array);
+        free(float_array);
+        return;
+    }
+    
     // Print outputs
     printf("\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
     printf("Conversion Results\n");
     printf("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
+    printf("Correctness check: PASSED\n");
     printf("Execution time: %.6f ms (%.9f seconds)\n", elapsed_ms, elapsed);
     printf("\nConverted grayscale values (2D array):\n");
     for (int i = 0; i < height; i++) {
@@ -177,6 +187,15 @@ void automated_mode() {
     double elapsed = end_time - start_time;
     double elapsed_ms = elapsed * 1000.0;
     
+    // Check correctness before outputting
+    int correctness_passed = check_correctness(array, float_array, total_elements);
+    if (!correctness_passed) {
+        printf("\nError: Correctness check failed. Output may be incorrect.\n");
+        free(array);
+        free(float_array);
+        return;
+    }
+    
     // For 1000x1000, output to text file
     if (height == 1000 && width == 1000) {
         FILE *file = fopen("output_1000x1000.txt", "w");
@@ -184,6 +203,7 @@ void automated_mode() {
             fprintf(file, "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
             fprintf(file, "Grayscale Conversion Results (1000x1000)\n");
             fprintf(file, "+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
+            fprintf(file, "Correctness check: PASSED\n");
             fprintf(file, "Execution time: %.6f ms (%.9f seconds)\n", elapsed_ms, elapsed);
             fprintf(file, "\nGenerated Input (Integer Pixel Values):\n");
             for (int i = 0; i < height; i++) {
@@ -203,6 +223,7 @@ void automated_mode() {
             printf("\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
             printf("Results for %dx%d\n", height, width);
             printf("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
+            printf("Correctness check: PASSED\n");
             printf("Execution time: %.6f ms (%.9f seconds)\n", elapsed_ms, elapsed);
             printf("Full output saved to: output_1000x1000.txt\n");
         } else {
@@ -211,6 +232,7 @@ void automated_mode() {
             printf("\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
             printf("Results for %dx%d\n", height, width);
             printf("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
+            printf("Correctness check: PASSED\n");
             printf("Execution time: %.6f ms (%.9f seconds)\n", elapsed_ms, elapsed);
             printf("\nSample output (first 5x5 pixels):\n");
             for (int i = 0; i < 5; i++) {
@@ -225,6 +247,7 @@ void automated_mode() {
         printf("\n+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
         printf("Results for %dx%d\n", height, width);
         printf("+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+\n");
+        printf("Correctness check: PASSED\n");
         printf("Execution time: %.6f ms (%.9f seconds)\n", elapsed_ms, elapsed);
         
         // Display full output for smaller sizes

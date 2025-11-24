@@ -1,119 +1,162 @@
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 Performance Test Results
-Running 100 iterations for each image dimension
+Comparing Assembly vs C Implementation
+Running 30 iterations for each image dimension
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 Test Image Dimension: 10x10 (100 pixels)
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-Iteration 1: PASSED - Time: 0.001700 ms (0.000001700 seconds)
-Iteration 2: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 3: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 4: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 5: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 6: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 7: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 8: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 9: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 10: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 11: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 12: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 13: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 14: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 15: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 16: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 17: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 18: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 19: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 20: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 21: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 22: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 23: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 24: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 25: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 26: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 27: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 28: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 29: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 30: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 31: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 32: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 33: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 34: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 35: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 36: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 37: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 38: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 39: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 40: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 41: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 42: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 43: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 44: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 45: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 46: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 47: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 48: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 49: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 50: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 51: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 52: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 53: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 54: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 55: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 56: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 57: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 58: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 59: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 60: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 61: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 62: PASSED - Time: 0.001300 ms (0.000001300 seconds)
-Iteration 63: PASSED - Time: 0.001200 ms (0.000001200 seconds)
-Iteration 64: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 65: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 66: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 67: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 68: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 69: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 70: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 71: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 72: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 73: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 74: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 75: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 76: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 77: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 78: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 79: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 80: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 81: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 82: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 83: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 84: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 85: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 86: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 87: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 88: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 89: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 90: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 91: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 92: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 93: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 94: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 95: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 96: PASSED - Time: 0.001000 ms (0.000001000 seconds)
-Iteration 97: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 98: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 99: PASSED - Time: 0.001100 ms (0.000001100 seconds)
-Iteration 100: PASSED - Time: 0.001000 ms (0.000001000 seconds)
+Iteration 1:
+  Assembly: PASSED - Time: 0.000600 ms (0.000000600 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
 
-Summary for 10x10:
-  Total iterations: 100
-  Passed: 100
-  Failed: 0
-  Average execution time: 0.001063 ms (0.000001063 seconds)
-  Total time for all iterations: 0.106300 ms (0.000106300 seconds)
+Iteration 2:
+  Assembly: PASSED - Time: 0.000500 ms (0.000000500 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 3:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 4:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 5:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 6:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 7:
+  Assembly: PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 8:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 9:
+  Assembly: PASSED - Time: 0.000500 ms (0.000000500 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 10:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 11:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 12:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 13:
+  Assembly: PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 14:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 15:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 16:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 17:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 18:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 19:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 20:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 21:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 22:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
+
+Iteration 23:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000100 ms (0.000000100 seconds)
+  Outputs Match: YES
+
+Iteration 24:
+  Assembly: PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 25:
+  Assembly: PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 26:
+  Assembly: PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 27:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 28:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000100 ms (0.000000100 seconds)
+  Outputs Match: YES
+
+Iteration 29:
+  Assembly: PASSED - Time: 0.000400 ms (0.000000400 seconds)
+  C:        PASSED - Time: 0.000200 ms (0.000000200 seconds)
+  Outputs Match: YES
+
+Iteration 30:
+  Assembly: PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  C:        PASSED - Time: 0.000300 ms (0.000000300 seconds)
+  Outputs Match: YES
 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
@@ -121,113 +164,155 @@ Summary for 10x10:
 Test Image Dimension: 100x100 (10000 pixels)
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-Iteration 1: PASSED - Time: 0.113800 ms (0.000113800 seconds)
-Iteration 2: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 3: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 4: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 5: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 6: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 7: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 8: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 9: PASSED - Time: 0.089100 ms (0.000089100 seconds)
-Iteration 10: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 11: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 12: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 13: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 14: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 15: PASSED - Time: 0.079600 ms (0.000079600 seconds)
-Iteration 16: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 17: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 18: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 19: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 20: PASSED - Time: 0.084700 ms (0.000084700 seconds)
-Iteration 21: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 22: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 23: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 24: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 25: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 26: PASSED - Time: 0.095400 ms (0.000095400 seconds)
-Iteration 27: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 28: PASSED - Time: 0.083600 ms (0.000083600 seconds)
-Iteration 29: PASSED - Time: 0.079800 ms (0.000079800 seconds)
-Iteration 30: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 31: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 32: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 33: PASSED - Time: 0.085600 ms (0.000085600 seconds)
-Iteration 34: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 35: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 36: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 37: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 38: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 39: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 40: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 41: PASSED - Time: 0.079600 ms (0.000079600 seconds)
-Iteration 42: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 43: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 44: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 45: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 46: PASSED - Time: 0.079500 ms (0.000079500 seconds)
-Iteration 47: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 48: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 49: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 50: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 51: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 52: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 53: PASSED - Time: 0.079400 ms (0.000079400 seconds)
-Iteration 54: PASSED - Time: 0.079300 ms (0.000079300 seconds)
-Iteration 55: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 56: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 57: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 58: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 59: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 60: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 61: PASSED - Time: 0.095900 ms (0.000095900 seconds)
-Iteration 62: PASSED - Time: 0.088900 ms (0.000088900 seconds)
-Iteration 63: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 64: PASSED - Time: 0.089000 ms (0.000089000 seconds)
-Iteration 65: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 66: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 67: PASSED - Time: 0.096900 ms (0.000096900 seconds)
-Iteration 68: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 69: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 70: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 71: PASSED - Time: 0.089200 ms (0.000089200 seconds)
-Iteration 72: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 73: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 74: PASSED - Time: 0.088800 ms (0.000088800 seconds)
-Iteration 75: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 76: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 77: PASSED - Time: 0.089200 ms (0.000089200 seconds)
-Iteration 78: PASSED - Time: 0.096400 ms (0.000096400 seconds)
-Iteration 79: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 80: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 81: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 82: PASSED - Time: 0.086000 ms (0.000086000 seconds)
-Iteration 83: PASSED - Time: 0.083800 ms (0.000083800 seconds)
-Iteration 84: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 85: PASSED - Time: 0.088700 ms (0.000088700 seconds)
-Iteration 86: PASSED - Time: 0.088600 ms (0.000088600 seconds)
-Iteration 87: PASSED - Time: 0.087000 ms (0.000087000 seconds)
-Iteration 88: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 89: PASSED - Time: 0.083800 ms (0.000083800 seconds)
-Iteration 90: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 91: PASSED - Time: 0.083800 ms (0.000083800 seconds)
-Iteration 92: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 93: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 94: PASSED - Time: 0.083800 ms (0.000083800 seconds)
-Iteration 95: PASSED - Time: 0.083800 ms (0.000083800 seconds)
-Iteration 96: PASSED - Time: 0.083900 ms (0.000083900 seconds)
-Iteration 97: PASSED - Time: 0.083700 ms (0.000083700 seconds)
-Iteration 98: PASSED - Time: 0.083800 ms (0.000083800 seconds)
-Iteration 99: PASSED - Time: 0.083800 ms (0.000083800 seconds)
-Iteration 100: PASSED - Time: 0.083700 ms (0.000083700 seconds)
+Iteration 1:
+  Assembly: PASSED - Time: 0.041200 ms (0.000041200 seconds)
+  C:        PASSED - Time: 0.025800 ms (0.000025800 seconds)
+  Outputs Match: YES
 
-Summary for 100x100:
-  Total iterations: 100
-  Passed: 100
-  Failed: 0
-  Average execution time: 0.085236 ms (0.000085236 seconds)
-  Total time for all iterations: 8.523600 ms (0.008523600 seconds)
+Iteration 2:
+  Assembly: PASSED - Time: 0.029100 ms (0.000029100 seconds)
+  C:        PASSED - Time: 0.008200 ms (0.000008200 seconds)
+  Outputs Match: YES
+
+Iteration 3:
+  Assembly: PASSED - Time: 0.031900 ms (0.000031900 seconds)
+  C:        PASSED - Time: 0.008800 ms (0.000008800 seconds)
+  Outputs Match: YES
+
+Iteration 4:
+  Assembly: PASSED - Time: 0.031700 ms (0.000031700 seconds)
+  C:        PASSED - Time: 0.007700 ms (0.000007700 seconds)
+  Outputs Match: YES
+
+Iteration 5:
+  Assembly: PASSED - Time: 0.029100 ms (0.000029100 seconds)
+  C:        PASSED - Time: 0.007300 ms (0.000007300 seconds)
+  Outputs Match: YES
+
+Iteration 6:
+  Assembly: PASSED - Time: 0.032200 ms (0.000032200 seconds)
+  C:        PASSED - Time: 0.008500 ms (0.000008500 seconds)
+  Outputs Match: YES
+
+Iteration 7:
+  Assembly: PASSED - Time: 0.055300 ms (0.000055300 seconds)
+  C:        PASSED - Time: 0.010800 ms (0.000010800 seconds)
+  Outputs Match: YES
+
+Iteration 8:
+  Assembly: PASSED - Time: 0.031500 ms (0.000031500 seconds)
+  C:        PASSED - Time: 0.010500 ms (0.000010500 seconds)
+  Outputs Match: YES
+
+Iteration 9:
+  Assembly: PASSED - Time: 0.031500 ms (0.000031500 seconds)
+  C:        PASSED - Time: 0.009300 ms (0.000009300 seconds)
+  Outputs Match: YES
+
+Iteration 10:
+  Assembly: PASSED - Time: 0.029100 ms (0.000029100 seconds)
+  C:        PASSED - Time: 0.011500 ms (0.000011500 seconds)
+  Outputs Match: YES
+
+Iteration 11:
+  Assembly: PASSED - Time: 0.031500 ms (0.000031500 seconds)
+  C:        PASSED - Time: 0.008800 ms (0.000008800 seconds)
+  Outputs Match: YES
+
+Iteration 12:
+  Assembly: PASSED - Time: 0.031700 ms (0.000031700 seconds)
+  C:        PASSED - Time: 0.008200 ms (0.000008200 seconds)
+  Outputs Match: YES
+
+Iteration 13:
+  Assembly: PASSED - Time: 0.031400 ms (0.000031400 seconds)
+  C:        PASSED - Time: 0.009400 ms (0.000009400 seconds)
+  Outputs Match: YES
+
+Iteration 14:
+  Assembly: PASSED - Time: 0.034800 ms (0.000034800 seconds)
+  C:        PASSED - Time: 0.009600 ms (0.000009600 seconds)
+  Outputs Match: YES
+
+Iteration 15:
+  Assembly: PASSED - Time: 0.032000 ms (0.000032000 seconds)
+  C:        PASSED - Time: 0.016100 ms (0.000016100 seconds)
+  Outputs Match: YES
+
+Iteration 16:
+  Assembly: PASSED - Time: 0.031600 ms (0.000031600 seconds)
+  C:        PASSED - Time: 0.007700 ms (0.000007700 seconds)
+  Outputs Match: YES
+
+Iteration 17:
+  Assembly: PASSED - Time: 0.031600 ms (0.000031600 seconds)
+  C:        PASSED - Time: 0.009600 ms (0.000009600 seconds)
+  Outputs Match: YES
+
+Iteration 18:
+  Assembly: PASSED - Time: 0.029300 ms (0.000029300 seconds)
+  C:        PASSED - Time: 0.017000 ms (0.000017000 seconds)
+  Outputs Match: YES
+
+Iteration 19:
+  Assembly: PASSED - Time: 0.032000 ms (0.000032000 seconds)
+  C:        PASSED - Time: 0.009300 ms (0.000009300 seconds)
+  Outputs Match: YES
+
+Iteration 20:
+  Assembly: PASSED - Time: 0.032000 ms (0.000032000 seconds)
+  C:        PASSED - Time: 0.009700 ms (0.000009700 seconds)
+  Outputs Match: YES
+
+Iteration 21:
+  Assembly: PASSED - Time: 0.031600 ms (0.000031600 seconds)
+  C:        PASSED - Time: 0.008200 ms (0.000008200 seconds)
+  Outputs Match: YES
+
+Iteration 22:
+  Assembly: PASSED - Time: 0.031800 ms (0.000031800 seconds)
+  C:        PASSED - Time: 0.021000 ms (0.000021000 seconds)
+  Outputs Match: YES
+
+Iteration 23:
+  Assembly: PASSED - Time: 0.035000 ms (0.000035000 seconds)
+  C:        PASSED - Time: 0.011000 ms (0.000011000 seconds)
+  Outputs Match: YES
+
+Iteration 24:
+  Assembly: PASSED - Time: 0.099000 ms (0.000099000 seconds)
+  C:        PASSED - Time: 0.009100 ms (0.000009100 seconds)
+  Outputs Match: YES
+
+Iteration 25:
+  Assembly: PASSED - Time: 0.034800 ms (0.000034800 seconds)
+  C:        PASSED - Time: 0.009000 ms (0.000009000 seconds)
+  Outputs Match: YES
+
+Iteration 26:
+  Assembly: PASSED - Time: 0.051700 ms (0.000051700 seconds)
+  C:        PASSED - Time: 0.010700 ms (0.000010700 seconds)
+  Outputs Match: YES
+
+Iteration 27:
+  Assembly: PASSED - Time: 0.032700 ms (0.000032700 seconds)
+  C:        PASSED - Time: 0.010100 ms (0.000010100 seconds)
+  Outputs Match: YES
+
+Iteration 28:
+  Assembly: PASSED - Time: 0.032500 ms (0.000032500 seconds)
+  C:        PASSED - Time: 0.009800 ms (0.000009800 seconds)
+  Outputs Match: YES
+
+Iteration 29:
+  Assembly: PASSED - Time: 0.035400 ms (0.000035400 seconds)
+  C:        PASSED - Time: 0.008700 ms (0.000008700 seconds)
+  Outputs Match: YES
+
+Iteration 30:
+  Assembly: PASSED - Time: 0.033100 ms (0.000033100 seconds)
+  C:        PASSED - Time: 0.008900 ms (0.000008900 seconds)
+  Outputs Match: YES
 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
@@ -235,113 +320,155 @@ Summary for 100x100:
 Test Image Dimension: 1000x1000 (1000000 pixels)
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-Iteration 1: PASSED - Time: 9.705900 ms (0.009705900 seconds)
-Iteration 2: PASSED - Time: 9.601500 ms (0.009601500 seconds)
-Iteration 3: PASSED - Time: 10.061300 ms (0.010061300 seconds)
-Iteration 4: PASSED - Time: 9.353400 ms (0.009353400 seconds)
-Iteration 5: PASSED - Time: 11.005300 ms (0.011005300 seconds)
-Iteration 6: PASSED - Time: 8.850300 ms (0.008850300 seconds)
-Iteration 7: PASSED - Time: 9.527300 ms (0.009527300 seconds)
-Iteration 8: PASSED - Time: 9.099400 ms (0.009099400 seconds)
-Iteration 9: PASSED - Time: 9.049900 ms (0.009049900 seconds)
-Iteration 10: PASSED - Time: 9.007400 ms (0.009007400 seconds)
-Iteration 11: PASSED - Time: 9.032700 ms (0.009032700 seconds)
-Iteration 12: PASSED - Time: 12.877800 ms (0.012877800 seconds)
-Iteration 13: PASSED - Time: 8.949200 ms (0.008949200 seconds)
-Iteration 14: PASSED - Time: 9.181000 ms (0.009181000 seconds)
-Iteration 15: PASSED - Time: 9.153400 ms (0.009153400 seconds)
-Iteration 16: PASSED - Time: 9.009900 ms (0.009009900 seconds)
-Iteration 17: PASSED - Time: 9.150900 ms (0.009150900 seconds)
-Iteration 18: PASSED - Time: 9.354400 ms (0.009354400 seconds)
-Iteration 19: PASSED - Time: 8.960700 ms (0.008960700 seconds)
-Iteration 20: PASSED - Time: 8.908400 ms (0.008908400 seconds)
-Iteration 21: PASSED - Time: 9.107000 ms (0.009107000 seconds)
-Iteration 22: PASSED - Time: 9.699200 ms (0.009699200 seconds)
-Iteration 23: PASSED - Time: 9.221700 ms (0.009221700 seconds)
-Iteration 24: PASSED - Time: 9.267100 ms (0.009267100 seconds)
-Iteration 25: PASSED - Time: 9.138200 ms (0.009138200 seconds)
-Iteration 26: PASSED - Time: 9.425900 ms (0.009425900 seconds)
-Iteration 27: PASSED - Time: 9.227000 ms (0.009227000 seconds)
-Iteration 28: PASSED - Time: 9.432300 ms (0.009432300 seconds)
-Iteration 29: PASSED - Time: 9.191200 ms (0.009191200 seconds)
-Iteration 30: PASSED - Time: 9.200900 ms (0.009200900 seconds)
-Iteration 31: PASSED - Time: 9.184500 ms (0.009184500 seconds)
-Iteration 32: PASSED - Time: 10.625800 ms (0.010625800 seconds)
-Iteration 33: PASSED - Time: 9.629500 ms (0.009629500 seconds)
-Iteration 34: PASSED - Time: 9.275900 ms (0.009275900 seconds)
-Iteration 35: PASSED - Time: 9.216000 ms (0.009216000 seconds)
-Iteration 36: PASSED - Time: 12.670600 ms (0.012670600 seconds)
-Iteration 37: PASSED - Time: 9.050100 ms (0.009050100 seconds)
-Iteration 38: PASSED - Time: 10.968600 ms (0.010968600 seconds)
-Iteration 39: PASSED - Time: 9.362300 ms (0.009362300 seconds)
-Iteration 40: PASSED - Time: 10.979600 ms (0.010979600 seconds)
-Iteration 41: PASSED - Time: 9.077000 ms (0.009077000 seconds)
-Iteration 42: PASSED - Time: 9.541800 ms (0.009541800 seconds)
-Iteration 43: PASSED - Time: 9.200200 ms (0.009200200 seconds)
-Iteration 44: PASSED - Time: 9.483100 ms (0.009483100 seconds)
-Iteration 45: PASSED - Time: 9.440100 ms (0.009440100 seconds)
-Iteration 46: PASSED - Time: 10.040800 ms (0.010040800 seconds)
-Iteration 47: PASSED - Time: 9.225000 ms (0.009225000 seconds)
-Iteration 48: PASSED - Time: 9.574500 ms (0.009574500 seconds)
-Iteration 49: PASSED - Time: 9.646400 ms (0.009646400 seconds)
-Iteration 50: PASSED - Time: 9.449100 ms (0.009449100 seconds)
-Iteration 51: PASSED - Time: 13.108100 ms (0.013108100 seconds)
-Iteration 52: PASSED - Time: 9.123700 ms (0.009123700 seconds)
-Iteration 53: PASSED - Time: 9.139200 ms (0.009139200 seconds)
-Iteration 54: PASSED - Time: 9.231200 ms (0.009231200 seconds)
-Iteration 55: PASSED - Time: 9.568100 ms (0.009568100 seconds)
-Iteration 56: PASSED - Time: 8.969100 ms (0.008969100 seconds)
-Iteration 57: PASSED - Time: 11.211200 ms (0.011211200 seconds)
-Iteration 58: PASSED - Time: 9.339700 ms (0.009339700 seconds)
-Iteration 59: PASSED - Time: 10.744700 ms (0.010744700 seconds)
-Iteration 60: PASSED - Time: 8.562400 ms (0.008562400 seconds)
-Iteration 61: PASSED - Time: 8.560100 ms (0.008560100 seconds)
-Iteration 62: PASSED - Time: 8.684400 ms (0.008684400 seconds)
-Iteration 63: PASSED - Time: 9.212900 ms (0.009212900 seconds)
-Iteration 64: PASSED - Time: 9.040900 ms (0.009040900 seconds)
-Iteration 65: PASSED - Time: 8.988000 ms (0.008988000 seconds)
-Iteration 66: PASSED - Time: 9.028600 ms (0.009028600 seconds)
-Iteration 67: PASSED - Time: 9.054500 ms (0.009054500 seconds)
-Iteration 68: PASSED - Time: 8.563600 ms (0.008563600 seconds)
-Iteration 69: PASSED - Time: 9.919600 ms (0.009919600 seconds)
-Iteration 70: PASSED - Time: 9.291100 ms (0.009291100 seconds)
-Iteration 71: PASSED - Time: 9.969900 ms (0.009969900 seconds)
-Iteration 72: PASSED - Time: 9.593300 ms (0.009593300 seconds)
-Iteration 73: PASSED - Time: 9.124800 ms (0.009124800 seconds)
-Iteration 74: PASSED - Time: 9.017000 ms (0.009017000 seconds)
-Iteration 75: PASSED - Time: 8.686200 ms (0.008686200 seconds)
-Iteration 76: PASSED - Time: 9.183500 ms (0.009183500 seconds)
-Iteration 77: PASSED - Time: 9.000100 ms (0.009000100 seconds)
-Iteration 78: PASSED - Time: 9.377500 ms (0.009377500 seconds)
-Iteration 79: PASSED - Time: 9.167800 ms (0.009167800 seconds)
-Iteration 80: PASSED - Time: 9.285500 ms (0.009285500 seconds)
-Iteration 81: PASSED - Time: 8.958400 ms (0.008958400 seconds)
-Iteration 82: PASSED - Time: 30.255500 ms (0.030255500 seconds)
-Iteration 83: PASSED - Time: 8.934700 ms (0.008934700 seconds)
-Iteration 84: PASSED - Time: 8.933500 ms (0.008933500 seconds)
-Iteration 85: PASSED - Time: 10.155900 ms (0.010155900 seconds)
-Iteration 86: PASSED - Time: 9.174300 ms (0.009174300 seconds)
-Iteration 87: PASSED - Time: 10.961100 ms (0.010961100 seconds)
-Iteration 88: PASSED - Time: 9.174800 ms (0.009174800 seconds)
-Iteration 89: PASSED - Time: 10.244700 ms (0.010244700 seconds)
-Iteration 90: PASSED - Time: 8.980800 ms (0.008980800 seconds)
-Iteration 91: PASSED - Time: 9.636900 ms (0.009636900 seconds)
-Iteration 92: PASSED - Time: 9.143000 ms (0.009143000 seconds)
-Iteration 93: PASSED - Time: 9.027000 ms (0.009027000 seconds)
-Iteration 94: PASSED - Time: 9.081900 ms (0.009081900 seconds)
-Iteration 95: PASSED - Time: 9.016000 ms (0.009016000 seconds)
-Iteration 96: PASSED - Time: 9.006700 ms (0.009006700 seconds)
-Iteration 97: PASSED - Time: 8.978000 ms (0.008978000 seconds)
-Iteration 98: PASSED - Time: 9.103500 ms (0.009103500 seconds)
-Iteration 99: PASSED - Time: 9.021300 ms (0.009021300 seconds)
-Iteration 100: PASSED - Time: 9.228100 ms (0.009228100 seconds)
+Iteration 1:
+  Assembly: PASSED - Time: 3.473500 ms (0.003473500 seconds)
+  C:        PASSED - Time: 1.344800 ms (0.001344800 seconds)
+  Outputs Match: YES
 
-Summary for 1000x1000:
-  Total iterations: 100
-  Passed: 100
-  Failed: 0
-  Average execution time: 9.671543 ms (0.009671543 seconds)
-  Total time for all iterations: 967.154300 ms (0.967154300 seconds)
+Iteration 2:
+  Assembly: PASSED - Time: 3.551300 ms (0.003551300 seconds)
+  C:        PASSED - Time: 1.253900 ms (0.001253900 seconds)
+  Outputs Match: YES
+
+Iteration 3:
+  Assembly: PASSED - Time: 3.261900 ms (0.003261900 seconds)
+  C:        PASSED - Time: 1.273600 ms (0.001273600 seconds)
+  Outputs Match: YES
+
+Iteration 4:
+  Assembly: PASSED - Time: 3.510100 ms (0.003510100 seconds)
+  C:        PASSED - Time: 1.256600 ms (0.001256600 seconds)
+  Outputs Match: YES
+
+Iteration 5:
+  Assembly: PASSED - Time: 3.420400 ms (0.003420400 seconds)
+  C:        PASSED - Time: 1.344600 ms (0.001344600 seconds)
+  Outputs Match: YES
+
+Iteration 6:
+  Assembly: PASSED - Time: 3.561100 ms (0.003561100 seconds)
+  C:        PASSED - Time: 1.317600 ms (0.001317600 seconds)
+  Outputs Match: YES
+
+Iteration 7:
+  Assembly: PASSED - Time: 3.442000 ms (0.003442000 seconds)
+  C:        PASSED - Time: 1.398800 ms (0.001398800 seconds)
+  Outputs Match: YES
+
+Iteration 8:
+  Assembly: PASSED - Time: 3.679300 ms (0.003679300 seconds)
+  C:        PASSED - Time: 1.324700 ms (0.001324700 seconds)
+  Outputs Match: YES
+
+Iteration 9:
+  Assembly: PASSED - Time: 3.269600 ms (0.003269600 seconds)
+  C:        PASSED - Time: 1.426300 ms (0.001426300 seconds)
+  Outputs Match: YES
+
+Iteration 10:
+  Assembly: PASSED - Time: 3.527800 ms (0.003527800 seconds)
+  C:        PASSED - Time: 1.309800 ms (0.001309800 seconds)
+  Outputs Match: YES
+
+Iteration 11:
+  Assembly: PASSED - Time: 3.355800 ms (0.003355800 seconds)
+  C:        PASSED - Time: 1.213100 ms (0.001213100 seconds)
+  Outputs Match: YES
+
+Iteration 12:
+  Assembly: PASSED - Time: 3.379600 ms (0.003379600 seconds)
+  C:        PASSED - Time: 1.323800 ms (0.001323800 seconds)
+  Outputs Match: YES
+
+Iteration 13:
+  Assembly: PASSED - Time: 3.447200 ms (0.003447200 seconds)
+  C:        PASSED - Time: 1.230800 ms (0.001230800 seconds)
+  Outputs Match: YES
+
+Iteration 14:
+  Assembly: PASSED - Time: 3.370600 ms (0.003370600 seconds)
+  C:        PASSED - Time: 1.423400 ms (0.001423400 seconds)
+  Outputs Match: YES
+
+Iteration 15:
+  Assembly: PASSED - Time: 3.690700 ms (0.003690700 seconds)
+  C:        PASSED - Time: 1.220500 ms (0.001220500 seconds)
+  Outputs Match: YES
+
+Iteration 16:
+  Assembly: PASSED - Time: 3.655200 ms (0.003655200 seconds)
+  C:        PASSED - Time: 1.348900 ms (0.001348900 seconds)
+  Outputs Match: YES
+
+Iteration 17:
+  Assembly: PASSED - Time: 3.363700 ms (0.003363700 seconds)
+  C:        PASSED - Time: 1.535100 ms (0.001535100 seconds)
+  Outputs Match: YES
+
+Iteration 18:
+  Assembly: PASSED - Time: 3.526500 ms (0.003526500 seconds)
+  C:        PASSED - Time: 1.495900 ms (0.001495900 seconds)
+  Outputs Match: YES
+
+Iteration 19:
+  Assembly: PASSED - Time: 3.934300 ms (0.003934300 seconds)
+  C:        PASSED - Time: 1.434900 ms (0.001434900 seconds)
+  Outputs Match: YES
+
+Iteration 20:
+  Assembly: PASSED - Time: 4.107300 ms (0.004107300 seconds)
+  C:        PASSED - Time: 1.412000 ms (0.001412000 seconds)
+  Outputs Match: YES
+
+Iteration 21:
+  Assembly: PASSED - Time: 3.689500 ms (0.003689500 seconds)
+  C:        PASSED - Time: 1.764500 ms (0.001764500 seconds)
+  Outputs Match: YES
+
+Iteration 22:
+  Assembly: PASSED - Time: 3.557300 ms (0.003557300 seconds)
+  C:        PASSED - Time: 1.337000 ms (0.001337000 seconds)
+  Outputs Match: YES
+
+Iteration 23:
+  Assembly: PASSED - Time: 3.347400 ms (0.003347400 seconds)
+  C:        PASSED - Time: 1.762100 ms (0.001762100 seconds)
+  Outputs Match: YES
+
+Iteration 24:
+  Assembly: PASSED - Time: 3.721400 ms (0.003721400 seconds)
+  C:        PASSED - Time: 1.384800 ms (0.001384800 seconds)
+  Outputs Match: YES
+
+Iteration 25:
+  Assembly: PASSED - Time: 3.522100 ms (0.003522100 seconds)
+  C:        PASSED - Time: 1.428700 ms (0.001428700 seconds)
+  Outputs Match: YES
+
+Iteration 26:
+  Assembly: PASSED - Time: 3.561300 ms (0.003561300 seconds)
+  C:        PASSED - Time: 1.488400 ms (0.001488400 seconds)
+  Outputs Match: YES
+
+Iteration 27:
+  Assembly: PASSED - Time: 4.317000 ms (0.004317000 seconds)
+  C:        PASSED - Time: 1.601500 ms (0.001601500 seconds)
+  Outputs Match: YES
+
+Iteration 28:
+  Assembly: PASSED - Time: 4.100700 ms (0.004100700 seconds)
+  C:        PASSED - Time: 1.756900 ms (0.001756900 seconds)
+  Outputs Match: YES
+
+Iteration 29:
+  Assembly: PASSED - Time: 3.505100 ms (0.003505100 seconds)
+  C:        PASSED - Time: 1.917900 ms (0.001917900 seconds)
+  Outputs Match: YES
+
+Iteration 30:
+  Assembly: PASSED - Time: 3.504900 ms (0.003504900 seconds)
+  C:        PASSED - Time: 1.457600 ms (0.001457600 seconds)
+  Outputs Match: YES
 
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
